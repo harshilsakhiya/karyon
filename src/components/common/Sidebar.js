@@ -7,6 +7,7 @@ export default function Sidebar() {
 
   const [category, setCategory] = useAtom(SidebarState);
 
+
   const SelectMenu = (data) => {
     setCategory(data.target.innerText);
   };

@@ -57,24 +57,13 @@
     }
   };
 
-  const handleKeyDown = (e) => {
-    if (validateForm()) {
-      if (
-        inputValue.email === logincredntiol.email &&
-        inputValue.password === logincredntiol.password
-      ) {
-        navigate("/dashboard");
-      } else {
-        setMatchError("Error : Your Id Password not matched");
-      }
-    }
-  };
+
   return (
     <div>
       <div className="signin-container w-100 vh-100 d-flex justify-content-center align-items-center ">
         <div className="col-5">
           <h3>Sign In</h3>
-          <div className="mb-3" onKeyDown={handleKeyDown}>
+          <div className="mb-3" >
             <label>Email address</label>
             <input
               type="text"
@@ -85,7 +74,7 @@
             />
             <span className="text-danger"> {errors["email"]}</span>
           </div>
-          <div className="mb-3" onKeyDown={handleKeyDown}>
+          <div className="mb-3" >
             <label>Password</label>
             <input
               type="password"
