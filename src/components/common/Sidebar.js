@@ -10,7 +10,6 @@ export default function Sidebar() {
   const SelectMenu = (data) => {
     setCategory(data.target.innerText);
   };
-
   return (
     <div className="fixed  bg-secondary  text-white vh-100 ">
       <div className="p-3">
